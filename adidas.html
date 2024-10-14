@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Got Shoes</title>
+    <link rel="stylesheet" href="indec.css">
+    <script src="main.js"></script>
+    <!-- <script>
+        // ฟังก์ชันที่ใช้เปลี่ยนหน้าไปยังลิงก์ที่กำหนดพร้อมกับส่งข้อมูลสินค้า
+        function goToPage(page, img, name, price) {
+            window.location.href = page + "?img=" + encodeURIComponent(img) + "&name=" + encodeURIComponent(name) + "&price=" + price;
+        }
+    </script> -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Logo Project/logofinal-removebg-preview.png" alt="I Got Shoes">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                
+                <!-- NIKE dropdown -->
+                <li>
+                    <a href="nike.html">NIKE</a>
+                    <ul class="dropdown">
+                        <li><a href="Nike_running.html">Nike Running</a></li>
+                        <li><a href="Nike_football.html">Nike Football</a></li>
+                        <li><a href="Nike_fashion.html">Nike Fashion</a></li>
+                        <li><a href="Nike_basketball.html">Nike Basketball</a></li>
+                        
+                    </ul>
+                </li>
+        
+                <!-- PUMA dropdown -->
+                <li>
+                    <a href="puma.html">PUMA</a>
+                    <ul class="dropdown">
+                        <li><a href="Puma_running.html">Puma Running</a></li>
+                        <li><a href="Puma_football.html">Puma Football</a></li>
+                        <li><a href="Puma_fashion.html">Puma Fashion</a></li>
+                        <li><a href="Puma_basketball.html">Puma Basketball</a></li>
+                    </ul>
+                </li>
+        
+                <!-- ADIDAS dropdown -->
+                <li>
+                    <a href="adidas.html">ADIDAS</a>
+                    <ul class="dropdown">
+                        <li><a href="Adidas_running.html">Adidas Running</a></li>
+                        <li><a href="Adidas_football.html">Adidas Football</a></li>
+                        <li><a href="Adidas_fashion.html">Adidas Fashion</a></li>
+                        <li><a href="Adidas_basketball.html">Adidas Basketball</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="search-cart">
+            <input type="text" placeholder="ช่องค้นหา">
+            <a href="cart.html" class="cart"><img src="Logo Project/shopping-cart.png" alt="Cart"></a>
+        </div>
+    </header>
+    <section class="hero">
+        <img src="Adidas/Adidas_logo.jpg" alt="Shoe Banner">
+    </section>
+
+    <main>
+        <section class="products">
+            <div class="product">
+                <img src="Adidas/Fashion/adidas_TAEKWONDO_LACE_W_JS1194_01_standard.png" alt="Nike Shoe 1">
+                <button onclick="goToPage('order.html', 'Adidas/Fashion/adidas_TAEKWONDO_LACE_W_JS1194_01_standard.png', 'Adidas Takewondo', 2039)">ราคาสินค้า</button>
+            </div>
+            <div class="product">
+                <img src="Adidas/Fashion/Adilette_Aqua_EG1758_01_standard.png" alt="Nike Shoe 2">
+                <button onclick="goToPage('order.html', 'Adidas/Fashion/Adilette_Aqua_EG1758_01_standard.png', 'Adidas Adilette Aqua', 1999)">ราคาสินค้า</button>
+            </div>
+            <div class="product">
+                <img src="Adidas/Basketball/Anthony_Edwards_1_Mid_IG6668_01_standard.png" alt="Nike Shoe 1">
+                <button onclick="goToPage('order.html', 'Adidas/Basketball/Anthony_Edwards_1_Mid_IG6668_01_standard.png', 'Adidas Anthony Edwards 1', 2039)">ราคาสินค้า</button>
+            </div>
+            <div class="product">
+                <img src="Adidas/Basketball/Trae_Young_3_Low_IE2704_01_standard.png" alt="Nike Shoe 2">
+                <button onclick="goToPage('order.html', 'Adidas/Basketball/Trae_Young_3_Low_IE2704_01_standard.png', 'Adidas Trae Young 3 Low', 1999)">ราคาสินค้า</button>
+            </div>
+            <div class="product">
+                <img src="Adidas/Running/Ultraboost_5x_IH3239_HM1.png" alt="Nike Shoe 6">
+                <button onclick="goToPage('order.html', 'Adidas/Running/Ultraboost_5x_IH3239_HM1.png', 'Adidas Ultraboost 5x', 2039)">ราคาสินค้า</button>
+            </div>
+            <div class="product">
+                <img src="Adidas/Football/Copa_Pure_2_League_Firm_Ground_IG8716_01_00_standard_hover.png" alt="Nike Shoe 6">
+                <button onclick="goToPage('order.html', 'Adidas/Football/Copa_Pure_2_League_Firm_Ground_IG8716_01_00_standard_hover.png', 'Adidas Copa Pure 2 ', 2039)">ราคาสินค้า</button>
+            </div>
+            <!-- ส่วนอื่นๆ -->
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 LOT Shoes Store</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
