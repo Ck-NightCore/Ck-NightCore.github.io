@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Got Shoes</title>
+    <link rel="stylesheet" href="indec.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Logo Project/logofinal-removebg-preview.png" alt="I Got Shoes">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Cart.html">Cart</a></li>
+            </ul>
+        </nav>
+        <div class="search-cart">
+            <input type="text" placeholder="ช่องค้นหา">
+            <a href="Cart.html" class="cart"><img src="Logo Project/shopping-cart.png" alt="Cart"></a>
+        </div>
+    </header>
+    
+    <main>
+        <div class="order-section">
+            <div class="order-container">
+                <!-- Product Image -->
+                <div class="product-image">
+                    <img src="" alt="Nike Shoe" id="product-img">
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <h2 class="product-name"></h2> <!-- ชื่อสินค้า -->
+                    <p class="product-price"></p> <!-- ราคา -->
+
+                    <input type="text" placeholder="รายละเอียดที่อยู่ลูกค้า">
+                    
+                    <div class="buttons">
+                        <button class="cod-btn" onclick="addToCart()">ลงตะกร้า</button>
+                        <button class="qrcode-btn">QR CODE</button>
+                    </div>
+
+                    <button class="order-btn" onclick="completeOrder()">สั่งซื้อ</button> <!-- ปุ่มสั่งซื้อ -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 I Got Shoes. All Rights Reserved.</p>
+    </footer>
+
+    <script src="product.js"></script> <!-- ลิงก์ไปยังไฟล์ JavaScript -->
+</body>
+</html>
